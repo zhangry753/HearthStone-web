@@ -1,0 +1,134 @@
+body{
+	font-family:'Microsoft YaHei';
+	background:url(../img/background.jpg);
+}
+body div{
+	margin: 10px auto;
+}
+ul{
+	width:960px;
+	margin:auto;
+	list-style:none;
+}
+li{
+	float:left;
+}
+button{
+	padding: 5px 10px;
+}
+p{
+	display: inline;
+}
+.clear{
+	clear:both;
+	margin:0;
+}
+
+.hero-info{
+	cursor:pointer;
+	text-align: center;
+    width: 200px;
+    border: 3px solid #30d1ba;
+    border-radius: 10px;
+    padding: 10px;
+	background-color: white;
+}
+.hero-info:hover{
+	background-color:#03A9F4;
+	color:white;
+	border-color:#03A9F4;
+}
+
+.end-turn{
+	color: white;
+    background-color: #009688;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+	
+}
+.end-turn:hover{
+	background-color:#4CAF50;
+}
+
+.battle-card{
+	width:96px;
+	cursor:pointer;
+	text-align: center;
+    border: 3px solid;
+    border-radius: 10px;
+	margin: 5px;
+	padding: 10px;
+	background-color: white;
+}
+.oppo-battle .battle-card{
+	border-color:#F44336;
+}
+.self-battle .battle-card{
+	border-color:#4caf50;
+}
+.battle-card:not(.card-select):hover{
+	background-color:#03A9F4;
+	color:white;
+	border-color:#03A9F4;
+}
+
+ul.hand{
+	width:700px;
+}
+.hand-card{
+	width:96px;
+	cursor:pointer;
+	text-align: center;
+    border: 3px solid;
+    border-radius: 10px;
+	margin: 5px;
+	padding: 10px;
+	background-color: white;
+	
+}
+.hand-card:not(.card-select):not(.empty-card):hover{
+	background-color:#03A9F4;
+	color:white;
+	border-color:#03A9F4;
+}
+
+.log{
+	border: solid #3F51B5;
+    border-radius: 10px;
+    width:385px;
+    height: 750px;
+    padding: 5px;
+    overflow: auto;
+	background-color: white;
+}
+.log .self-log{
+	color: #00a24a;
+}
+.log .oppo-log{
+	color: #f44336;
+}
+
+.empty-card{
+	width:96px;
+	height:85px;
+}
+
+
+.card-select{
+  animation: selectAnim 1s infinite steps(1);
+}
+/* -------------------------------动画------------------------------------------------- */
+@keyframes selectAnim{
+  0.1%{
+    background-color: #FFEB3B;
+    border-style: dashed;
+  }
+  49.9%{
+    background-color: #fff282;
+    border-style: solid;
+  }
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>我的炉石</title>
+<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/scene.js"></script>
+<script type="text/javascript" src="../widget/layer/layer.js"></script>
+</head>
+
+
+<body>
+<div id="buttonBar">
+	<button id="restartBtn">重新开始</button>
+</div>
+<div id="playground" style="display:none;">
+	<div style="float:left;width:1100px;">
+		<div id="opponent" class="hero-info" myValue="OPPONENT">
+			<strong>敌方英雄：</strong><br/>
+			生命值:<p id="oppoHealth">30</p><br/>
+			水晶:<p id="oppoCurCry">1</p>/<p id="oppoMaxCry">1</p><br/>
+			手牌数:<p id="oppoHandCount">3</p><br/>
+			牌库:<p id="oppoLibCount">27</p>
+		</div>
+		
+		<div>
+			<h3 style="float:left;">敌方战场：</h3>
+			<ul id="oppoBattleYard" class="oppo-battle">
+				<li class='battle-card' myValue="OPPO_FIELD_1"></li>
+				<li class='battle-card' myValue="OPPO_FIELD_2"></li>
+				<li class='battle-card' myValue="OPPO_FIELD_3"></li>
+				<li class='battle-card' myValue="OPPO_FIELD_4"></li>
+				<li class='battle-card' myValue="OPPO_FIELD_5"></li>
+				<li class='battle-card' myValue="OPPO_FIELD_6"></li>
+				<li class='battle-card' myValue="OPPO_FIELD_7"></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		
+		<div>
+			<h3 style="float:left;">己方战场：</h3>
+			<ul id="selfBattleYard" class="self-battle">
+				<li class='battle-card' myValue="SELF_FIELD_1"></li>
+				<li class='battle-card' myValue="SELF_FIELD_2"></li>
+				<li class='battle-card' myValue="SELF_FIELD_3"></li>
+				<li class='battle-card' myValue="SELF_FIELD_4"></li>
+				<li class='battle-card' myValue="SELF_FIELD_5"></li>
+				<li class='battle-card' myValue="SELF_FIELD_6"></li>
+				<li class='battle-card' myValue="SELF_FIELD_7"></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="self" class="hero-info" myValue="SELF">
+			<strong>己方英雄：</strong><br/>
+			生命值:<p id="selfHealth">30</p><br/>
+			水晶:<p id="selfCurCry">1</p>/<p id="selfMaxCry">1</p><br/>
+			手牌数:<p id="selfHandCount">3</p><br/>
+			牌库:<p id="selfLibCount">27</p>
+		</div>
+		<div id="endTurn" class="end-turn">回合结束</div>
+			
+		<div>
+			<h3 style="float:left;">手牌：</h3>
+			<ul id="handCard" class="hand">
+				<li class='hand-card' myValue="0"></li>
+				<li class='hand-card' myValue="1"></li>
+				<li class='hand-card' myValue="2"></li>
+				<li class='hand-card' myValue="3"></li>
+				<li class='hand-card' myValue="4"></li>
+				<li class='hand-card' myValue="5"></li>
+				<li class='hand-card' myValue="6"></li>
+				<li class='hand-card' myValue="7"></li>
+				<li class='hand-card' myValue="8"></li>
+				<li class='hand-card' myValue="9"></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div style="float:left;">
+		<h3>战斗记录：</h3>
+		<div id="log" class="log">
+			对手使用“愤怒的小鸡(1)”攻击“愤怒的小鸡(3)”<br/>
+			对手使用“愤怒的小鸡(2)”攻击“愤怒的小鸡(3)”<br/>
+			对手使用“愤怒的小鸡(1)”攻击“愤怒的小鸡(3)”<br/>
+			对手使用“铁鬓灰熊(1)”攻击“铁鬓灰熊(3)”<br/>
+			对手使用“冰风雪人(4)”攻击“你的英雄”<br/>
+			对手使用“愤怒的小鸡(1)”攻击“愤怒的小鸡(3)”<br/>
+			对手使用“愤怒的小鸡(1)”攻击“愤怒的小鸡(3)”<br/>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+</body>
+</html>
